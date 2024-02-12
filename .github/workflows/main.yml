@@ -22,6 +22,9 @@ jobs:
           template: classic
           base: header, followup
           config_timezone: Europe/Dublin
+      - name: Save Followup SVG
+        run: mv metrics.svg followup.svg
+
       - name: Introduction Metrics
         uses: lowlighter/metrics@latest
         with:
@@ -30,3 +33,5 @@ jobs:
           template: classic
           base: header, introduction
           config_timezone: Europe/Dublin
+      - name: Save Introduction SVG
+        run: mv metrics.svg introduction.svg
