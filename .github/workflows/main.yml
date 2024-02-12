@@ -23,7 +23,10 @@ jobs:
           base: header, followup
           config_timezone: Europe/Dublin
       - name: Save Followup SVG
-        run: mv metrics.plugin.followup.user.svg followup.svg
+        run: |
+          if [ -f "metrics.svg" ]; then
+            mv metrics.svg introduction.svg
+          fi
 
       - name: Introduction Metrics
         uses: lowlighter/metrics@latest
