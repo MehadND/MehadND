@@ -1,5 +1,5 @@
 ### Hi there 👋
-![Metrics](/metrics.plugin.followup.user.svg)
+![Metrics](/github-metrics.svg)
 
 <!--
 **MehadND/MehadND** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
