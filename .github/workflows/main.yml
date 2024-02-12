@@ -18,10 +18,12 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
   
-          filename: metrics.plugin.followup.user.svg
+          # Options
           user: MehadND
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Europe/Dublin
           plugin_followup: yes
           plugin_followup_sections: user
+          plugin_introduction: yes
+          plugin_introduction_title: yes
